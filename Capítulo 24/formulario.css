@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
+body {
+    background-color: rgb(63, 156, 213);
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+#cadastro {
+    width: 80vw;
+    margin: auto;
+}
+
+#cadastro > fieldset {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 30px;
+}
+
+legend {
+    background-color: rgb(0, 61, 100);
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: white;
+}
+
+#cadastro2 {
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#cadastro2 > fieldset {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 30px;
+}
+
+#cadastro2 p {
+    padding: 3px;
+}
+
+#isenha {
+    margin-bottom: 30px;
+}
+
+#cadastro2 {
+    margin-bottom: 50px;
+}
+
+#itel {
+    margin-bottom: 15px;
+}

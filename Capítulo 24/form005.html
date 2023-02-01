@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Formulário</title>
+    <link rel="shortcut icon" href="../Revisão Capítulo 23/pacote-d013/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off" id="cadastro">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required autocomplete="current-password" minlength="5" maxlength="15" placeholder="Mínimo 5 dígitos">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+    <form action="cadastro.php" method="get" id="cadastro2" autocomplete="off">
+        <fieldset>
+            <legend>Cadastrar</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="username" size="15px">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" required size="30px">
+            </p>
+            <p>
+                <label for="inota">Nota:</label>
+                <input type="number" name="nota" id="inota" required min="0" max="10" placeholder="de 0 a 10" step="0.1">
+            </p>
+            <p>
+                <label for="imes">Mês:</label>
+                <input type="month" name="mes" id="imes" required>
+            </p>
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="itempo">Tempo:</label>
+                <input type="time" name="tempo" id="itempo" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$" required>
+            </p>
+            <input type="submit" value="Enviar Cadastro">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>

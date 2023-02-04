@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
+body {
+    background-image: radial-gradient(circle, rgb(102, 159, 243), rgb(0, 102, 255));
+    padding-bottom: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.30);
+}
+
+fieldset {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 85vw;
+    margin: auto;
+    padding: 20px;
+}
+
+legend {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 100px;
+    font-size: 1.2em;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+#inome {
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+}
+
+#isobrenome {
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+}
+
+#isenha {
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+}
+
+#inota {
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+}
+
+#imes {
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+}
+
+#idata {
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+    padding: 0px 10px;
+}
+
+#itempo {
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+    padding: 0px 10px;
+}
+
+#iemail {
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+}
+
+#itel {
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
+    margin-left: 10px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Revisão</title>
+    <link rel="shortcut icon" href="../Revisão Capítulo 23/pacote-d013/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="revisao1.css">
+</head>
+<body>
+    <h1>Formulário Revisão</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" autocomplete="username" size="15" required>
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" size="25" required>
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" minlength="5" maxlength="15" required>
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="gen" id="igenmasc" value="M" checked>
+                <label for="igenmasc">Masculino</label>
+                <input type="radio" name="gen" id="igenfem" value="F">
+                <label for="igenfem">Feminino</label>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$" required>
+            </p>
+            <p>
+                <label for="inota">Nota:</label>
+                <input type="number" name="nota" id="inota" min="0" max="10" step="0.1" required>
+            </p>
+            <p>
+                <label for="imes">Mês:</label>
+                <input type="month" name="mes" id="imes" required>
+            </p>
+            <p>
+                <label for="itempo">Tempo:</label>
+                <input type="time" name="tempo" id="itempo" required>
+            </p>
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                Anexar arquivo:
+                <input type="file" name="enviar" id="ienviar">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+    <form action="cadastro.php" method="get" id="selecione">
+        <fieldset>
+            <legend>Selecione</legend>
+            <p>
+                Qual grupo da Igreja faz parte: <br><br>
+                <input type="checkbox" name="evg" id="ievg"> <label for="ievg">Evangelização</label> <br>
+                <input type="checkbox" name="fju" id="ifju"> <label for="ifju">FJU</label> <br>
+                <input type="checkbox" name="calebe" id="icalebe"> <label for="icalebe">Calebe</label> <br>
+                <input type="checkbox" name="outros" id="ioutros"> <label for="ioutros">Outros</label>
+            </p>
+            <p>
+                Se for FJU, qual projeto está envolvido: <br><br>
+                <input type="checkbox" name="midia" id="imidia"> <label for="imidia">Mídia</label> <br>
+                <input type="checkbox" name="cultura" id="icultura"> <label for="icultura">Cultura</label> <br>
+                <input type="checkbox" name="esportes" id="iesportes"> <label for="iesportes">Esportes</label> <br>
+                <input type="checkbox" name="universitarios" id="iuniversitarios"> <label for="iuniversitario">Universitários</label>
+            </p>
+            <p>
+                Escolha uma cor: <br>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                Escolha seu nível de satisfação: <br>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="5">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>

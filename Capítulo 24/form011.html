@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Revisão</title>
+    <link rel="shortcut icon" href="../Revisão Capítulo 23/pacote-d013/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="formrev011.css">
+</head>
+<body>
+    <h1>Formulário Revisão</h1>
+    <form action="cadastro.php" method="post">
+
+
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="estado" id="iest">
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Estados do Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                    <optgroup label="Estados do Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PR">Pernambuco</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="MED">Médico</option>
+                    <option value="ENG">Engenheiro</option>
+                    <option value="POL">Polícia</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem: </label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

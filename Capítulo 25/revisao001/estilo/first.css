@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+body {
+    background: green url('../imagens/imagens/fundo-madeira.jpg') top center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+#telefone {
+    position: absolute;
+    background-color: rgb(0, 157, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px;
+    background: transparent url('../imagens/imagens/frame-iphone.png');
+    background-size: cover;
+}
+
+#itela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 472px;
+}
+
+#redes-sociais {
+    text-align: right;
+}
+
+#redes-sociais img {
+    border-radius: 50%;
+    width: 50px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.50);
+}
+
+#redes-sociais img:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.50);
+    border: 1px solid white;
+    transition: transform 0.2s, border 0.25s;
+}
+
+#itela-tablet {
+    position: relative;
+    width: 548px;
+    height: 346px;
+
+    top: 57px;
+    left: 59px;
+}
+
+#itela-tablet {
+    display: none;
+}
+
+#itela-desktop {
+    position: relative;
+    top: 50px;
+    left: 30px;
+
+    width: 706px;
+    height: 400px;
+}
+
+#itela-desktop {
+    display: none;
+}
+
+#itela-tv {
+    position: relative;
+    width: 986px;
+    height: 555px;
+    top: 7px;
+    left: 7px;
+}
+
+#itela-tv {
+    display: none;
+}

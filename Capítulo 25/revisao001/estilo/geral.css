@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* Tablet */
+
+@media print {
+    #itela {display: none;}
+    #itela-tablet {display: none;}
+    #itela-desktop {display: none;}
+    #itela-tv {display: none;}
+    #redes-sociais {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background: black url('../imagens/back-tablet.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    #telefone {
+        background: transparent url('../imagens/tablet.png') center center no-repeat;
+
+        height: 466px;
+        width: 660px;
+    }
+
+    ::-webkit-scrollbar {
+        height: 0px;
+        width: 0px;
+    }
+
+    #itela {display: none;}
+    #itela-tablet {display: block;}
+}
+
+/* Desktop */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: black url('../imagens/back-pc.jpg') top center no-repeat;
+        background-size: cover;
+    }
+
+    #telefone {
+        background: transparent url('../imagens/desktop.png') center center no-repeat;
+        width: 764px;
+    }
+
+    #itela {display: none;}
+    #itela-tablet {display: none;}
+    #itela-desktop {display: block;}
+
+}
+
+/* Grandes Telas */
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: black url('../imagens/back-tv.jpg') top center no-repeat;
+        background-size: cover;
+    }
+
+    #telefone {
+        background: transparent url('../imagens/TV.png') no-repeat;
+        width: 1000px;
+        height: 629px;
+    }
+
+    #itela {display: none;}
+    #itela-tablet {display: none;}
+    #itela-desktop {display: none;}
+    #itela-tv {display: block;}
+}

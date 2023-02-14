@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="items">
+            <ul>
+                <li><a href="#">Opção 1</a>
+                <li><a href="#">Opção 2</a>
+                <li><a href="#">Opção 3</a>
+                <li><a href="#">Opção 4</a>
+                <li><a href="#">Opção 5</a>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit itaque cupiditate harum, quos ex omnis libero amet cum, enim inventore tempore. Dignissimos nemo et architecto porro reprehenderit minima consequuntur inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor distinctio expedita harum rem, ex quos aliquam. Corrupti reprehenderit sunt officiis ullam dolorem quia assumenda, fugit molestiae at quod natus expedita.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ullam veritatis rerum maiores, iure hic, natus vero velit eos numquam beatae alias eligendi, incidunt fugit reiciendis voluptatum inventore at voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus molestias suscipit! Maxime atque officia minima, eos distinctio mollitia voluptatum at modi cum, velit enim voluptas omnis tempore numquam sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ut aliquam amet repellat error quod, repellendus minima eaque, unde illum quasi deserunt laborum delectus eum iure, sed distinctio ratione neque?</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (items.style.display == 'block') {
+                items.style.display = 'none'
+            } else {
+                items.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

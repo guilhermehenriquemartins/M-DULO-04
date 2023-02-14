@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'principal';
+    src: url(../fonts/Capture\ it.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --fonteprincipal: 'principal', Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+h1 {
+    font: normal 500 2em var(--fonteprincipal);
+    padding: 10px 0px;
+}
+
+#destaquemeio {
+    color: yellow;
+    font-size: 1.5em;
+}
+
+p {
+    padding: 10px 5px;
+    padding-bottom: 40px;
+    font: normal 500 1em Arial, Helvetica, sans-serif;
+}
+
+menu {
+    width: 100vw;
+}
+
+#itens {
+    display: none;
+}
+
+menu > ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+menu > ul > li {
+    background-color: black;
+    padding: 20px;
+    font: normal bolder 1em Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+menu a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: yellow;
+    transition-duration: 0.2s;
+}
+
+li:hover a {
+    color: black;
+    transition-duration: 0.2s;
+}
+
+li:active {
+    background-color: white;
+    transition-duration: 0.1s;
+}
+
+#burguer {
+    background-color: black;
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+body {
+    background: black url('../imagens/academia.jpg') top center no-repeat fixed;
+    background-size: cover;
+}
+
+main {
+    background-color: white;
+    width: 95vw;
+    margin: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.60);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h2 {
+    font: normal bolder 2em Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.treino-titulo {
+    background-color: white;
+    padding: 50px 0px;
+}
+
+.treino-imagem {
+    height: 300px;
+    cursor: pointer;
+}
+
+.treino-imagem h3 {
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.70);
+    font: bolder 2em Arial, Helvetica, sans-serif;
+    line-height: 300px;
+    text-transform: uppercase;
+}
+
+.treino-imagem:hover h3 {
+    font-size: 2.5em;
+    transition-duration: 0.2s;
+}
+
+.treino-imagem:active h3 {
+    background-color: white;
+    font-size: 1.8em;
+    transition-duration: 0.2s;
+}
+
+#imagem-costas {
+    background: black url('../imagens/costas.jpg') top center no-repeat fixed;
+    background-size: cover;
+}
+
+#imagem-dupla h3 {
+    font-size: 1.5em;
+}
+
+#imagem-dupla:hover h3 {
+    font-size: 2em;
+    transition-duration: 0.2s;
+}
+
+#imagem-dupla:active h3 {
+    font-size: 1.8em;
+    transition-duration: 0.2s;
+}
+
+#imagem-braco {
+    background: black url('../imagens/Biceps.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+#imagem-perna {
+    background: black url('../imagens/pernas.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+#imagem-peito {
+    background: black url('../imagens/peito.jpg') top center no-repeat fixed;
+    background-size: cover;
+}
+
+#imagem-dupla {
+    background: black url('../imagens/costas\ e\ biceps.jpg') top center no-repeat fixed;
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#imagem-dupla > h3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+footer > #assinatura {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: .8em;
+}

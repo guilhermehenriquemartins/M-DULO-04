@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #burguer {
+        display: none;
+    }
+
+    #itens {
+        display: block;
+    }
+
+    #itens > ul > li {
+        display: inline-block;
+        padding: 20px 30px;
+    }
+
+    main {
+        width: 600px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #burguer {
+        display: none;
+    }
+    
+    #itens {
+        display: block;
+    }
+
+    #itens > ul > li {
+        display: inline-block;
+        padding: 20px 50px;
+    }
+
+    main {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #burguer {
+        display: none;
+    }
+
+    #itens {
+        display: block;
+    }
+
+    #itens > ul > li {
+        display: inline-block;
+        padding: 20px 70px;
+    }
+
+    main {
+        width: 750px;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="estilos/first.css" media="all">
+    <link rel="stylesheet" href="estilos/geral.css">
+</head>
+<body>
+    <main>
+        <h1>Formulário Geral</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Cadastro</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" autocomplete="username" required size="30">
+                </p>
+                <p>
+                    <label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome" required>
+                </p>
+                <p>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" required>
+                </p>
+                <p>
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" autocomplete="new-password" minlength="5" maxlength="15" placeholder="Mín.5 Car Máx.15 Car" required>
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$" required placeholder="(xx) xxxxx-xxxx">
+                </p>
+                <p>
+                    <label for="idata">Data:</label>
+                    <input type="date" name="data" id="idata" required>
+                </p>
+                <p>
+                    <label for="imes">Mês:</label>
+                    <input type="month" name="mes" id="imes" required>
+                </p>
+                <p>
+                    <label for="itempo">Tempo:</label>
+                    <input type="time" name="tempo" id="itempo" required>
+                </p>
+                <p>
+                    <label for="ienviar">Enviar:</label>
+                    <input type="file" name="enviar" id="ienviar">
+                </p>
+                <p class="botones">
+                    <input type="submit" value="Enviar" class="botao">
+                    <input type="reset" value="Limpar" class="botao">
+                </p>
+            </fieldset>
+        </form>
+        <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Selecione</legend>
+                <p>
+                    Esporte:
+                    <ul>
+                        <li><input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label></li>
+                        <li><input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Vôlei</label></li>
+                        <li><input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label></li>
+                        <li><input type="checkbox" name="esart" id="iesart"> <label for="iesart">Artes Marciais</label></li>
+                    </ul>
+                </p>
+                <p id="selecionar-genero">
+                    Sexo:
+                    <input type="radio" name="sx" id="sxmas" checked value="M"> <label for="sxmas">Masculino</label>
+                    <input type="radio" name="sx" id="sxfem" value="F"> <label for="sxfem">Feminino</label>
+                </p>
+                <p>
+                    Estado:
+                    <select name="estado" id="iestado">
+                        <option value="" selected>--- Selecione ---</option>
+                        <optgroup label="Estados do Nordeste">
+                            <option value="MA">Maranhão</option>
+                            <option value="PR">Pernambuco</option>
+                            <option value="BA">Bahia</option>
+                        </optgroup>
+                        <optgroup label="Estados do Sudeste">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="prof" id="iprof" list="profissoes">
+                    <datalist id="profissoes">
+                        <option value="DEV">Desenvolvedor</option>
+                        <option value="MED">Médico</option>
+                        <option value="ENG">Engenheiro</option>
+                        <option value="POL">Policial</option>
+                    </datalist>
+                </p>
+                <p>
+                    Nível de Satisfação:
+                    <input type="range" name="satisfacao" id="isatisfacao" min="0" max="5" value="2" oninput="iresultado.innerHTML = Number(isatisfacao.value)">
+                    <output id="iresultado"> 3 </output>
+                </p>
+                <p>
+                    Mensagem: <br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10">
+
+                    </textarea>
+                </p>
+                <p class="botones">
+                    <input type="submit" value="Enviar" class="botao">
+                    <input type="reset" value="Limpar" class="botao">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

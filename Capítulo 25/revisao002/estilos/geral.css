@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Impressão */
+
+@media print {
+    
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: black url('../Imagens/back-tablet.jpg') top center no-repeat fixed;
+        background-size: cover;
+    }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: black url('../Imagens/back-pc.jpg') top center no-repeat fixed;
+        background-size: cover;
+    }
+}
+
+
+/* Grandes Telas */
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: black url('../Imagens/back-tv.jpg') top center no-repeat fixed;
+        background-size: cover;
+    }
+}
